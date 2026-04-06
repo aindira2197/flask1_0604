@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Qidiruv</title>
+</head>
+<body>
+    <h2>Qidiruv natijalari</h2>
+
+    {% if results %}
+        <ul>
+            {% for item in results %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Hech narsa topilmadi</p>
+    {% endif %}
+
+</body>
+</html>
